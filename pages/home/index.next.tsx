@@ -1,11 +1,11 @@
 import { NextPage } from "next";
 
-const home: NextPage = () => {
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
-};
+import MainLayout from "@/layout/main";
+
+const home: NextPage = () => (
+  <MainLayout breadcrumb={{ data: [{ text: "About Us" }] }}>
+    <div></div>
+  </MainLayout>
+);
 
 export default home;
