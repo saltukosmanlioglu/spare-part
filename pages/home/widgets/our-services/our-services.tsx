@@ -40,7 +40,7 @@ const OurServices: React.FunctionComponent = () => {
           title="Furniture Design"
         />
         <div>
-          <Image alt="" fill src="/images/our-services.jpg" />
+          <Image alt="" fill src="/images/home/our-services.jpg" />
         </div>
       </Styled.Wrapper>
     </Section>

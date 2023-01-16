@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { RenderProps } from "./types";
-import * as Styled from "./Render.styled";
+import * as Styled from "./render.styled";
 
 const Render: React.FunctionComponent<RenderProps> = ({ children }) => {
   const [isRender, setIsRender] = useState<boolean>(true);

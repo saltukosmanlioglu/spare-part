@@ -1,3 +1,3 @@
-export { default } from "./Render";
+export { default } from "./render";
 
 export type { RenderProps } from "./types";
