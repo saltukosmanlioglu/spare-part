@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import MainLayout from "@/layout/main";
 
 import AboutUs from "./widgets/about-us";
+import BestSkills from "./widgets/best-skills";
 import OurEmployees from "./widgets/our-employees";
 import OurServices from "./widgets/our-services";
 
@@ -14,6 +15,7 @@ const Home: NextPage = () => (
   >
     <AboutUs />
     <OurServices />
+    {/* <BestSkills /> */}
     <OurEmployees />
   </MainLayout>
 );
