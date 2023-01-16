@@ -20,7 +20,7 @@ const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({ data }) => {
                 {item.text} <span>/</span>
               </Link>
             ) : (
-              <p>{item.text}</p>
+              <p key={index}>{item.text}</p>
             )
           )}
         </div>
