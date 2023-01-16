@@ -6,10 +6,12 @@ import * as Styled from "./section.styled";
 const Section: React.FunctionComponent<SectionProps> = ({
   children,
   description,
+  mPadding,
+  padding,
   title,
 }) => {
   return (
-    <Styled.Section>
+    <Styled.Section mPadding={mPadding} padding={padding}>
       <div>
         <p>{description}</p>
         <h2>{title}</h2>
