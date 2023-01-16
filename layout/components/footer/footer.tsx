@@ -100,10 +100,7 @@ const Footer: React.FunctionComponent = () => {
           </Link>
         </Styled.SocialMedia>
         <Styled.CopyRight>
-          <p>
-            &copy; 2023, ARCH TEMPLATE. MADE WITH PASSION BY{" "}
-            <span>MILA BILISIM</span>
-          </p>
+          <p>&copy; 2023, ARCH TEMPLATE. MADE WITH PASSION</p>
         </Styled.CopyRight>
       </div>
     );
