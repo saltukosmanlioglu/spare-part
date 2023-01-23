@@ -86,4 +86,8 @@ export const Counts = styled.div`
       letter-spacing: 2px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
 `;

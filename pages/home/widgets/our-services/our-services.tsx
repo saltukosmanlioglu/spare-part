@@ -9,6 +9,7 @@ import * as Styled from "./our-services.styled";
 const OurServices: React.FunctionComponent = () => {
   return (
     <Section
+      background="#f8f4f3"
       description="BEST FEATURES"
       mPadding="80px 0"
       padding="80px 120px"

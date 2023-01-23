@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Image from "next/image";
 import { Settings } from "react-slick";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
@@ -63,6 +62,10 @@ const OurEmployees: React.FunctionComponent = () => {
 
   return (
     <Styled.OurEmployees>
+      <Styled.Background>
+        <div />
+        <div />
+      </Styled.Background>
       <Styled.Wrapper>
         <Styled.Information>
           <b>Some thoughts from Us</b>

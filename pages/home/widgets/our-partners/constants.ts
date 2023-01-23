@@ -1,0 +1,17 @@
+export const ourPartners = [
+  { src: "/images/partners/1.jpeg" },
+  { src: "/images/partners/2.jpeg" },
+  { src: "/images/partners/3.jpeg" },
+  { src: "/images/partners/4.jpeg" },
+  { src: "/images/partners/5.jpeg" },
+  { src: "/images/partners/1.jpeg" },
+  { src: "/images/partners/2.jpeg" },
+  { src: "/images/partners/3.jpeg" },
+  { src: "/images/partners/4.jpeg" },
+  { src: "/images/partners/5.jpeg" },
+  { src: "/images/partners/1.jpeg" },
+  { src: "/images/partners/2.jpeg" },
+  { src: "/images/partners/3.jpeg" },
+  { src: "/images/partners/4.jpeg" },
+  { src: "/images/partners/5.jpeg" },
+];

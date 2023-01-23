@@ -10,6 +10,36 @@ export const OurEmployees = styled.div`
   }
 `;
 
+export const Background = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+
+  & > div:first-child {
+    width: 70%;
+    background-image: url("/images/home/dots.png");
+    height: 70%;
+  }
+
+  & > div:last-child {
+    width: 65%;
+    background-color: #f8f4f3;
+  }
+  
+  @media screen and (max-width: 600px) {
+    background-color: #f8f4f3;
+    
+    & > div {
+      display: none;
+    }
+  }
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
