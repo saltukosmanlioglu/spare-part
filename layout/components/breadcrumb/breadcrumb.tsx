@@ -9,7 +9,7 @@ const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({ data }) => {
   return (
     <Styled.Breadcrumb>
       <Styled.Detail>
-        <h1>About Us</h1>
+        <h1>{data[data.length - 1].text}</h1>
         <div>
           <Link href="/home">
             Home <span>/</span>

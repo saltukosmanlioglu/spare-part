@@ -133,9 +133,11 @@ export const SocialMedia = styled.div`
   flex-direction: row;
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
-    line-height: 60px;
     text-align: center;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.05);
