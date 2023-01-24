@@ -2,6 +2,7 @@ import React from "react";
 
 import Breadcrumb from "@/layout/components/breadcrumb";
 import Footer from "@/layout/components/footer";
+import Header from "@/layout/components/header";
 import ScrollUp from "@/layout/components/scroll-up";
 
 import { MainLayoutProps } from "./types";
@@ -12,7 +13,9 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
 }) => {
   return (
     <div>
-      <div style={{ height: 100 }}></div>
+      <div style={{ height: 100 }}>
+        <Header />
+      </div>
       {breadcrumb && <Breadcrumb {...breadcrumb} />}
       <div>{children}</div>
       <Footer />

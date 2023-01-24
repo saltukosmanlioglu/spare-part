@@ -100,7 +100,14 @@ const Footer: React.FunctionComponent = () => {
           </Link>
         </Styled.SocialMedia>
         <Styled.CopyRight>
-          <p>&copy; 2023, ARCH TEMPLATE. MADE WITH PASSION</p>
+          <p>
+            &copy; 2023, ARCH TEMPLATE. MADE WITH PASSION BY{" "}
+            <span>
+              <Link href="https://www.milabilisim.com.tr/home" target="_blank">
+                MILABILISIM
+              </Link>
+            </span>
+          </p>
         </Styled.CopyRight>
       </div>
     );

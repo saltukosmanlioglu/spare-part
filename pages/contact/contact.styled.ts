@@ -1,25 +1,16 @@
 import styled from "styled-components";
 
-export const InfoWrapper = styled.div`
-  padding: 80px 160px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
-
-  @media screen and (max-width: 600px) {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
-  }
-`;
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 160px;
 
-  & > div {
-    width: 50%;
+  & > div:nth-child(1) {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   @media screen and (max-width: 600px) {
@@ -41,7 +32,10 @@ export const Wrapper = styled.div`
 `;
 
 export const SendEmail = styled.div`
-  padding: 40px;
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+  padding: 20px;
+  border-radius: 8px;
+  width: 65%;
 
   h1 {
     font-size: 32px;
@@ -50,7 +44,6 @@ export const SendEmail = styled.div`
   }
 
   form {
-    padding-right: 120px;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -66,15 +59,20 @@ export const SendEmail = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    padding: 0;
-
     form {
-      padding-right: 0;
       gap: 20px;
 
       & > div {
         width: 100%;
       }
     }
+  }
+`;
+
+export const Map = styled.div`
+  padding: 20px 160px;
+
+  @media screen and (max-width: 600px) {
+    padding: 20px;
   }
 `;

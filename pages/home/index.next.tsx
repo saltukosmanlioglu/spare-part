@@ -4,8 +4,9 @@ import MainLayout from "@/layout/main";
 
 import AboutUs from "./widgets/about-us";
 import OurEmployees from "./widgets/our-employees";
-import OurServices from "./widgets/our-services";
 import OurPartners from "./widgets/our-partners";
+import OurServices from "./widgets/our-services";
+import Stages from "./widgets/stages";
 
 const Home: NextPage = () => (
   <MainLayout
@@ -15,6 +16,7 @@ const Home: NextPage = () => (
   >
     <AboutUs />
     <OurServices />
+    <Stages />
     <OurPartners />
     <OurEmployees />
   </MainLayout>

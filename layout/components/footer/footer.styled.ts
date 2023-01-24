@@ -160,7 +160,13 @@ export const CopyRight = styled.div`
     color: #888888;
 
     span {
-      color: #b19777;
+      a {
+        color: #b19777;
+
+        :hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 `;

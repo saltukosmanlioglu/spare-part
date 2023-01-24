@@ -53,37 +53,30 @@ const Contact: NextPage = () => {
         data: [{ text: "Contact" }],
       }}
     >
-      <Styled.InfoWrapper>
-        <InfoCard
-          icon={<HiDevicePhoneMobile color="#252531" size={40} />}
-          description={
-            <Link href="tel:+7 (111) 1234 56789">+7 (111) 1234 56789</Link>
-          }
-          title="Call Us"
-        />
-        <InfoCard
-          icon={<TbMailOpened color="#252531" size={40} />}
-          description={
-            <Link href="mailto:contact@Archo.com">contact@Archo.com</Link>
-          }
-          title="Email Us"
-        />
-        <InfoCard
-          icon={<MdLocationOn color="#252531" size={40} />}
-          description={
-            <Link href="/home" target="_blank">
-              B17 Princess Road, London, Greater London NW18JR, United Kingdom
-            </Link>
-          }
-          title="Address"
-        />
-      </Styled.InfoWrapper>
       <Styled.Wrapper>
         <div>
-          <iframe
-            height="100%"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            width="100%"
+          <InfoCard
+            icon={<HiDevicePhoneMobile color="#252531" size={40} />}
+            description={
+              <Link href="tel:+7 (111) 1234 56789">+7 (111) 1234 56789</Link>
+            }
+            title="Call Us"
+          />
+          <InfoCard
+            icon={<TbMailOpened color="#252531" size={40} />}
+            description={
+              <Link href="mailto:contact@Archo.com">contact@Archo.com</Link>
+            }
+            title="Email Us"
+          />
+          <InfoCard
+            icon={<MdLocationOn color="#252531" size={40} />}
+            description={
+              <Link href="/home" target="_blank">
+                B17 Princess Road, London, Greater London NW18JR, United Kingdom
+              </Link>
+            }
+            title="Address"
           />
         </div>
         <Styled.SendEmail>
@@ -133,6 +126,13 @@ const Contact: NextPage = () => {
           </form>
         </Styled.SendEmail>
       </Styled.Wrapper>
+      <Styled.Map>
+        <iframe
+          height={400}
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          width="100%"
+        />
+      </Styled.Map>
     </MainLayout>
   );
 };
