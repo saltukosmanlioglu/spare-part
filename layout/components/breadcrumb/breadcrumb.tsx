@@ -5,7 +5,10 @@ import Link from "next/link";
 import { BreadcrumbProps } from "./types";
 import * as Styled from "./breadcrumb.styled";
 
-const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({ data }) => {
+const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({
+  data,
+  image,
+}) => {
   return (
     <Styled.Breadcrumb>
       <Styled.Detail>
@@ -25,7 +28,7 @@ const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({ data }) => {
           )}
         </div>
       </Styled.Detail>
-      <Image alt="" fill src="/images/layout/breadcrumb/1.jpg" />
+      <Image alt="" fill src={image} />
     </Styled.Breadcrumb>
   );
 };

@@ -51,6 +51,7 @@ const Contact: NextPage = () => {
     <MainLayout
       breadcrumb={{
         data: [{ text: "Contact" }],
+        image: "/images/layout/breadcrumb/1.jpg",
       }}
     >
       <Styled.Wrapper>

@@ -5,4 +5,5 @@ export interface BreadcrumbItemProps {
 
 export interface BreadcrumbProps {
   data: Array<BreadcrumbItemProps>;
+  image: string;
 }
