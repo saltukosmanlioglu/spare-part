@@ -9,11 +9,7 @@ import OurServices from "./widgets/our-services";
 import Stages from "./widgets/stages";
 
 const Home: NextPage = () => (
-  <MainLayout
-    breadcrumb={{
-      data: [{ text: "About Us" }],
-    }}
-  >
+  <MainLayout>
     <AboutUs />
     <OurServices />
     <Stages />

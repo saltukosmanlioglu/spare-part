@@ -13,10 +13,12 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
 }) => {
   return (
     <div>
-      <div style={{ height: 100 }}>
-        <Header />
-      </div>
-      {breadcrumb && <Breadcrumb {...breadcrumb} />}
+      <Header />
+      {breadcrumb && (
+        <div style={{ paddingTop: 40 }}>
+          <Breadcrumb {...breadcrumb} />
+        </div>
+      )}
       <div>{children}</div>
       <Footer />
       <ScrollUp />
