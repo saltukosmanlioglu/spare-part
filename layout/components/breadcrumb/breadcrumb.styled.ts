@@ -17,6 +17,10 @@ export const Breadcrumb = styled.section`
     object-fit: cover;
     z-index: -1;
   }
+
+  @media screen and (max-width: 600px) {
+    margin: 0 20px;
+  }
 `;
 
 export const Detail = styled.div`

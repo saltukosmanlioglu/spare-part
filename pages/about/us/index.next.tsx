@@ -3,6 +3,10 @@ import { NextPage } from "next";
 
 import MainLayout from "@/layout/main";
 
+import Percentages from "./widgets/percentages";
+
+import * as Styled from "./us.styled";
+
 const Us: NextPage = () => {
   return (
     <MainLayout
@@ -11,7 +15,9 @@ const Us: NextPage = () => {
         image: "/images/layout/breadcrumb/1.jpg",
       }}
     >
-      <div></div>
+      <Styled.Us>
+        <Percentages />
+      </Styled.Us>
     </MainLayout>
   );
 };
