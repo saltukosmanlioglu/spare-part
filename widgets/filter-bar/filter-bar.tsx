@@ -6,7 +6,7 @@ import { FilterBarProps } from "./types";
 import * as Styled from "./filter-bar.styled";
 
 const FilterBar = <T extends unknown>({
-  children,
+  component,
   categories,
   data,
 }: FilterBarProps<T>) => {
@@ -27,7 +27,7 @@ const FilterBar = <T extends unknown>({
       </Styled.Wrapper>
       <Styled.Content>
         <Styled.DataWrapper>
-          {data.filter((e) => filter(e, data)).map(children)}
+          {data.filter((e) => filter(e, data)).map(component)}
         </Styled.DataWrapper>
       </Styled.Content>
     </Styled.FilterBar>

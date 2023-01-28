@@ -20,7 +20,7 @@ const OurSolutionPartners: NextPage = () => {
       <Styled.OurSolutionPartners>
         <FilterBar<PartnerProps>
           categories={categories}
-          children={(item, index) => (
+          component={(item, index) => (
             <Styled.Value key={index}>
               <Image alt="" fill src={item.src} />
             </Styled.Value>

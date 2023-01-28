@@ -20,7 +20,7 @@ const OurProducts: NextPage = () => {
       <Styled.OurProducts>
         <FilterBar<ProductProps>
           categories={categories}
-          children={(item, index) => (
+          component={(item, index) => (
             <Styled.Product key={index}>
               <div>
                 <b>{item.title}</b>
