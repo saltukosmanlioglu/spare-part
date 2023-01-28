@@ -8,12 +8,7 @@ const useFilter = <T extends unknown>() => {
   };
 
   const filter = useCallback(
-    (
-      e: {
-        type: number;
-      },
-      data: Array<T>
-    ) => {
+    (e: { type: number }, data: Array<T>) => {
       if (e.type === activeIndex) {
         return data;
       } else if (activeIndex === 0) {

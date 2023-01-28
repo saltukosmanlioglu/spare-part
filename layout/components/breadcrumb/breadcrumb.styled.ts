@@ -10,7 +10,7 @@ export const Breadcrumb = styled.section`
   justify-content: center;
   position: relative;
   height: 65vh;
-  margin: 0 80px;
+  margin: 40px 80px 0;
   background-color: rgba(2, 5, 11, 0.5);
 
   img {

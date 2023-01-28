@@ -14,11 +14,7 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
   return (
     <div>
       <Menu />
-      {breadcrumb && (
-        <div style={{ paddingTop: 40 }}>
-          <Breadcrumb {...breadcrumb} />
-        </div>
-      )}
+      {breadcrumb && <Breadcrumb {...breadcrumb} />}
       <div>{children}</div>
       <Footer />
       <ScrollUp />

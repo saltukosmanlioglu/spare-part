@@ -14,11 +14,12 @@ const OurEmployees: React.FunctionComponent = () => {
   ) => {
     const { className } = props;
 
+    const onNext = () => {
+      slickRef.current.slickNext();
+    };
+
     return (
-      <button
-        className={className}
-        onClick={() => slickRef.current.slickNext()}
-      >
+      <button className={className} onClick={onNext}>
         <FaLongArrowAltRight size={16} />
       </button>
     );
@@ -29,11 +30,12 @@ const OurEmployees: React.FunctionComponent = () => {
   ) => {
     const { className } = props;
 
+    const onPrev = () => {
+      slickRef.current.slickPrev();
+    };
+
     return (
-      <button
-        className={className}
-        onClick={() => slickRef.current.slickPrev()}
-      >
+      <button className={className} onClick={onPrev}>
         <FaLongArrowAltLeft size={16} />
       </button>
     );
