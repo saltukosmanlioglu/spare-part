@@ -1,7 +1,13 @@
 import React from "react";
 import { NextPage } from "next";
+import Image from "next/image";
 
 import MainLayout from "@/layout/main";
+import FilterBar from "@/widgets/filter-bar";
+
+import { categories, partners } from "./constants";
+import { PartnerProps } from "./types";
+import * as Styled from "./our-solution-partners.styled";
 
 const OurSolutionPartners: NextPage = () => {
   return (
@@ -11,7 +17,17 @@ const OurSolutionPartners: NextPage = () => {
         image: "/images/layout/breadcrumb/1.jpg",
       }}
     >
-      <div></div>
+      <Styled.OurSolutionPartners>
+        <FilterBar<PartnerProps>
+          categories={categories}
+          children={(item, index) => (
+            <Styled.Value key={index}>
+              <Image alt="" fill src={item.src} />
+            </Styled.Value>
+          )}
+          data={partners}
+        />
+      </Styled.OurSolutionPartners>
     </MainLayout>
   );
 };

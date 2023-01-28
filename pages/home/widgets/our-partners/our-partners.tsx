@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Slick, { Settings } from "react-slick";
+import { Settings } from "react-slick";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 import Section from "@/components/section";

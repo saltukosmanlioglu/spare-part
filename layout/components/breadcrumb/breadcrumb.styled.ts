@@ -9,10 +9,9 @@ export const Breadcrumb = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 90%;
   height: 65vh;
+  margin: 0 80px;
   background-color: rgba(2, 5, 11, 0.5);
-  margin: 0 auto;
 
   img {
     object-fit: cover;

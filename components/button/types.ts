@@ -1,4 +1,4 @@
-export type ButtonType = "submit" | "reset" | "button" | undefined;
+import { ButtonType } from "@/utils/types";
 
 export interface ButtonProps {
   text: string;
