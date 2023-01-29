@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
+import { onScroll } from "@/utils/funcs";
+
 import * as Styled from "./scroll-up.styled";
 
 const ScrollUp: React.FunctionComponent = () => {
   const [visible, setVisible] = useState<boolean>(false);
-
-  const onScroll = () =>
-    window.scrollTo({
-      behavior: "smooth",
-      top: 0,
-    });
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

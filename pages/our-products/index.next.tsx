@@ -30,6 +30,7 @@ const OurProducts: NextPage = () => {
             </Styled.Product>
           )}
           data={products}
+          mCol={1}
         />
       </Styled.OurProducts>
     </MainLayout>

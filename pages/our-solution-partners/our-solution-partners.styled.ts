@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const OurSolutionPartners = styled.div`
   padding: 80px;
+
+  @media screen and (max-width: 600px) {
+    padding: 20px;
+  }
 `;
 
 export const Value = styled.div`

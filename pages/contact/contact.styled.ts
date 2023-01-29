@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
     gap: 20px;
 
     & > div {
-      width: 100%;
+      width: 100% !important;
 
       iframe {
         width: 100%;

@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
   justify-content: center;
   padding: 16px 0;
   background: url("/images/home/line-pattern.png") repeat;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const FilterButton = styled.button<{ isActive: boolean }>`
@@ -28,7 +32,7 @@ export const FilterButton = styled.button<{ isActive: boolean }>`
     }
   }
 
-  :after  {
+  :after {
     content: "";
     width: 7px;
     height: 7px;
@@ -53,12 +57,60 @@ export const Content = styled.div`
   padding: 40px 0;
 `;
 
-export const DataWrapper = styled.div`
+export const DataWrapper = styled.div<{ mCol: number }>`
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 
   @media screen and (max-width: 600px) {
     gap: 20px;
+
+    & > div {
+      width: ${({ mCol }) =>
+        mCol > 1
+          ? `calc((100% / ${mCol}) - (20px / ${mCol}))`
+          : `calc(100% / ${mCol})`};
+    }
+  }
+`;
+
+export const MobileFilter = styled.div`
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    position: sticky;
+    top: 92px;
+    z-index: 10000;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+
+    & > button {
+      display: flex;
+      flex-direction: row;
+      padding: 16px 20px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      :hover {
+      }
+    }
+  }
+`;
+
+export const DropdownList = styled.div`
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+
+  button {
+    width: 100%;
+    padding: 8px 20px;
+    width: 100%;
+    text-align: left;
   }
 `;

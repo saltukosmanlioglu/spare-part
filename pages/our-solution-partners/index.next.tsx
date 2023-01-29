@@ -26,6 +26,7 @@ const OurSolutionPartners: NextPage = () => {
             </Styled.Value>
           )}
           data={partners}
+          mCol={2}
         />
       </Styled.OurSolutionPartners>
     </MainLayout>
