@@ -1,13 +1,14 @@
 import React from "react";
 import { NextPage } from "next";
+import dynamic from "next/dynamic";
 
-import MainLayout from "@/layout/main";
+const DynamicMainLayout = dynamic(() => import("@/layout/main"));
 
 const NotFound: NextPage = () => {
   return (
-    <MainLayout>
+    <DynamicMainLayout>
       <div></div>
-    </MainLayout>
+    </DynamicMainLayout>
   );
 };
 

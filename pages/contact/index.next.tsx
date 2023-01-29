@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { HiDevicePhoneMobile } from "react-icons/hi2";
 import { MdLocationOn } from "react-icons/md";
@@ -7,13 +8,14 @@ import { TbMailOpened } from "react-icons/tb";
 
 import Button from "@/components/button";
 import InfoCard from "@/components/info-card";
-import MainLayout from "@/layout/main";
 import emailService, { SendEmailRequest } from "@/services/send-email";
 
 import TextArea from "./components/text-area";
 import TextField from "./components/text-field";
 
 import * as Styled from "./contact.styled";
+
+const DynamicMainLayout = dynamic(() => import("@/layout/main"));
 
 const Contact: NextPage = () => {
   const [formData, setFormData] = useState<SendEmailRequest>({
@@ -48,7 +50,7 @@ const Contact: NextPage = () => {
   };
 
   return (
-    <MainLayout
+    <DynamicMainLayout
       breadcrumb={{
         data: [{ text: "Contact" }],
         image: "/images/layout/breadcrumb/1.jpg",
@@ -134,7 +136,7 @@ const Contact: NextPage = () => {
           width="100%"
         />
       </Styled.Map>
-    </MainLayout>
+    </DynamicMainLayout>
   );
 };
 

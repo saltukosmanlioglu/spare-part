@@ -1,17 +1,19 @@
 import React from "react";
 import { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
-import MainLayout from "@/layout/main";
 import FilterBar from "@/widgets/filter-bar";
 
 import { categories, products } from "./constants";
 import { ProductProps } from "./types";
 import * as Styled from "./our-products.styled";
 
+const DynamicMainLayout = dynamic(() => import("@/layout/main"));
+
 const OurProducts: NextPage = () => {
   return (
-    <MainLayout
+    <DynamicMainLayout
       breadcrumb={{
         data: [{ text: "Our Products" }],
         image: "/images/layout/breadcrumb/1.jpg",
@@ -33,7 +35,7 @@ const OurProducts: NextPage = () => {
           mCol={1}
         />
       </Styled.OurProducts>
-    </MainLayout>
+    </DynamicMainLayout>
   );
 };
 

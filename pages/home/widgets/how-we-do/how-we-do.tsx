@@ -1,7 +1,9 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import Section from "@/components/section";
-import Stages from "@/widgets/stages";
+
+const DynamicStages = dynamic(() => import("@/widgets/stages"));
 
 const HowWeDo: React.FunctionComponent = () => {
   return (
@@ -12,7 +14,7 @@ const HowWeDo: React.FunctionComponent = () => {
       padding="80px 120px"
       title="How We Do ?"
     >
-      <Stages
+      <DynamicStages
         captions={[
           { title: "2012" },
           { title: "2015" },

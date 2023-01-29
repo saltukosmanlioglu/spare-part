@@ -1,11 +1,12 @@
 import React from "react";
 import { NextPage } from "next";
+import dynamic from "next/dynamic";
 
-import MainLayout from "@/layout/main";
+const DynamicMainLayout = dynamic(() => import("@/layout/main"));
 
 const OurTeam: NextPage = () => {
   return (
-    <MainLayout
+    <DynamicMainLayout
       breadcrumb={{
         data: [
           { text: "About - Our Team" },
@@ -14,7 +15,7 @@ const OurTeam: NextPage = () => {
       }}
     >
       <div></div>
-    </MainLayout>
+    </DynamicMainLayout>
   );
 };
 
