@@ -15,7 +15,7 @@ const ScrollUp: React.FunctionComponent = () => {
   }, []);
 
   return visible ? (
-    <Styled.ScrollUp onClick={onScroll}>
+    <Styled.ScrollUp onClick={() => onScroll()}>
       <MdKeyboardArrowUp color="#b19777" size={24} />
     </Styled.ScrollUp>
   ) : null;

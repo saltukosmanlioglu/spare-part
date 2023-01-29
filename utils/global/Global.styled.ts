@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  ::after, ::before {
+    box-sizing: border-box;
+  }
+
   body {
     line-height: 1.4;
   }

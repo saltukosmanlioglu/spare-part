@@ -10,7 +10,7 @@ export const Section = styled.section<{
   background: ${({ background }) => background};
 
   & > div:nth-child(1) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     p {
       color: #b19777;
@@ -28,7 +28,7 @@ export const Section = styled.section<{
     padding: ${({ mPadding }) => mPadding};
 
     & > div:nth-child(1) {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 `;
