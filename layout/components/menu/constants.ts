@@ -33,15 +33,19 @@ export const menuItems = [
     subMenuItems: [
       {
         href: "/our-products",
-        text: "Auto RAR",
+        text: "Kategori 1",
       },
       {
         href: "/our-products",
-        text: "Takımımız",
+        text: "Kategori 2",
       },
       {
         href: "/our-products",
-        text: "Auto RAR",
+        text: "Kategori 3",
+      },
+      {
+        href: "/our-products",
+        text: "Kategori 4",
       },
     ],
     text: "ÜRÜNLERİMİZ",

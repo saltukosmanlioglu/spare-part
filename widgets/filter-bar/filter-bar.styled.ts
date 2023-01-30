@@ -82,7 +82,7 @@ export const MobileFilter = styled.div`
     display: block;
     background-color: #fff;
     position: sticky;
-    top: 92px;
+    top: 62px;
     z-index: 10000;
     box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
 
@@ -112,5 +112,6 @@ export const DropdownList = styled.div`
     padding: 8px 20px;
     width: 100%;
     text-align: left;
+    color: #000;
   }
 `;

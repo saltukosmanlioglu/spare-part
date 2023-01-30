@@ -20,6 +20,7 @@ export const Breadcrumb = styled.section`
 
   @media screen and (max-width: 600px) {
     margin: 0 20px;
+    height: 45vh;
   }
 `;
 

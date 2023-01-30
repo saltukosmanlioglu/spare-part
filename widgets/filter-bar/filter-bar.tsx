@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, {  useRef, useState } from "react";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
+import { onScroll } from "@/utils/funcs";
 import { useFilter } from "@/utils/hooks";
 
 import { FilterBarProps } from "./types";
 import * as Styled from "./filter-bar.styled";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { onScroll } from "@/utils/funcs";
 
 const FilterBar = <T extends unknown>({
   component,
@@ -17,14 +17,16 @@ const FilterBar = <T extends unknown>({
 
   const { activeIndex, filter, onClick } = useFilter<T>();
 
+  const filterRef = useRef<HTMLDivElement>(null);
+
   const onMobileClick = (index: number) => {
     onClick(index);
     setIsActive(false);
-    onScroll(550);
+    onScroll(Number(filterRef?.current?.offsetTop) - 62);
   };
 
   return (
-    <Styled.FilterBar>
+    <Styled.FilterBar ref={filterRef}>
       <Styled.Wrapper>
         {categories.map((item, index) => (
           <Styled.FilterButton

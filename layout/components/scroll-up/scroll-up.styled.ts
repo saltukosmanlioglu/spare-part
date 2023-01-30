@@ -15,7 +15,7 @@ export const ScrollUp = styled.button`
   border: 1px solid #b19777;
 
   @media screen and (max-width: 600px) {
-    right: 0;
+    right: 10px;
     bottom: 20px;
   }
 `;
