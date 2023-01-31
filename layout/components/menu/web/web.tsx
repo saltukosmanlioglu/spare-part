@@ -18,17 +18,23 @@ const Web: React.FunctionComponent = () => {
           <Image alt="Auto RAR" fill src="/images/logo/logo-dark.png" />
         </Link>
         <Styled.MenuItems>
-          {menuItems.map((menuItem, index) => (
+          {menuItems.map((item, index) => (
             <div key={index}>
-              {menuItem.href ? (
-                <Link href={menuItem.href}>{menuItem.text}</Link>
+              {item.href ? (
+                <Link href={item.href}>{item.text}</Link>
               ) : (
-                <p>{menuItem.text}</p>
+                <p>{item.text}</p>
               )}
-              {menuItem.subMenuItems && (
+              {item.subMenuItems && (
                 <Styled.SubMenuItems>
-                  {menuItem.subMenuItems.map((subMenuItem, index) => (
-                    <Link key={index} href={subMenuItem.href}>
+                  {item.subMenuItems.map((subMenuItem, subMenuIndex) => (
+                    <Link
+                      key={subMenuIndex}
+                      href={{
+                        pathname: subMenuItem.href,
+                        query: { index: subMenuIndex + 1 },
+                      }}
+                    >
                       <HiOutlineMinusSm color="#b19777" />
                       <p>{subMenuItem.text}</p>
                     </Link>

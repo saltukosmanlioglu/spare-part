@@ -78,6 +78,7 @@ export const MobileFilter = styled.div`
   display: none;
 
   @media screen and (max-width: 600px) {
+    color: #000;
     position: relative;
     display: block;
     background-color: #fff;

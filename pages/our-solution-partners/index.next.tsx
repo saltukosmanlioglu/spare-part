@@ -1,5 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
@@ -12,6 +13,8 @@ import * as Styled from "./our-solution-partners.styled";
 const DynamicMainLayout = dynamic(() => import("@/layout/main"));
 
 const OurSolutionPartners: NextPage = () => {
+  const router = useRouter();
+
   return (
     <DynamicMainLayout
       breadcrumb={{
@@ -28,6 +31,7 @@ const OurSolutionPartners: NextPage = () => {
             </Styled.Value>
           )}
           data={partners}
+          index={Number(router.query.index)}
           mCol={2}
         />
       </Styled.OurSolutionPartners>

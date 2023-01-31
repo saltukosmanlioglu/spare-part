@@ -23,6 +23,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Menu = styled.div<{ isActive: boolean }>`
+  * {
+    color: #000;
+  }
+
   box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
   background-color: #fff;
   position: absolute;
