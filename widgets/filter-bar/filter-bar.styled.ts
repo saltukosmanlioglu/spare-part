@@ -78,7 +78,10 @@ export const MobileFilter = styled.div`
   display: none;
 
   @media screen and (max-width: 600px) {
-    color: #000;
+    * {
+      color: #000;
+    }
+
     position: relative;
     display: block;
     background-color: #fff;
@@ -95,7 +98,8 @@ export const MobileFilter = styled.div`
       justify-content: space-between;
       width: 100%;
 
-      :hover {
+      p {
+        font-size: 16px;
       }
     }
   }
@@ -114,5 +118,9 @@ export const DropdownList = styled.div`
     width: 100%;
     text-align: left;
     color: #000;
+
+    p {
+      font-size: 16px;
+    }
   }
 `;

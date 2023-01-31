@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import { onScroll } from "@/utils/funcs";
-import { useFilter } from "@/utils/hooks";
+import { useFilter, useMobile } from "@/utils/hooks";
 
 import { FilterBarProps } from "./types";
 import * as Styled from "./filter-bar.styled";
@@ -16,21 +17,30 @@ const FilterBar = <T extends unknown>({
 }: FilterBarProps<T>) => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
-  const { activeIndex, filter, onClick } = useFilter<T>(index);
-
+  const router = useRouter();
   const filterRef = useRef<HTMLDivElement>(null);
+
+  const { activeIndex, filter, onClick } = useFilter<T>(index);
+  const { isMobile } = useMobile();
+
+  const getScroll = () =>
+    setTimeout(() => {
+      onScroll(
+        isMobile
+          ? Number(filterRef?.current?.offsetTop) - 62
+          : Number(filterRef?.current?.offsetTop) - 92
+      );
+    }, 300);
 
   const onMobileClick = (index: number) => {
     onClick(index);
     setIsActive(false);
-    onScroll(Number(filterRef?.current?.offsetTop) - 62);
+    getScroll();
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      index && onScroll(Number(filterRef?.current?.offsetTop) - 62);
-    }, 300);
-  }, [index]);
+    index && getScroll();
+  }, [router.query]);
 
   return (
     <Styled.FilterBar ref={filterRef}>
@@ -54,7 +64,7 @@ const FilterBar = <T extends unknown>({
           <Styled.DropdownList>
             {categories.map((item, index) => (
               <button key={index} onClick={() => onMobileClick(index)}>
-                {item.text}
+                <p>{item.text}</p>
               </button>
             ))}
           </Styled.DropdownList>

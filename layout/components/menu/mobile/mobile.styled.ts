@@ -47,7 +47,7 @@ export const Menu = styled.div<{ isActive: boolean }>`
       justify-content: space-between;
 
       p {
-        font-size: 14px;
+        font-size: 15px;
         font-family: PLight;
       }
     }
@@ -63,7 +63,7 @@ export const Menu = styled.div<{ isActive: boolean }>`
         padding: 6px 0;
 
         p {
-          font-size: 14px;
+          font-size: 15px;
           font-family: PLight;
         }
 
