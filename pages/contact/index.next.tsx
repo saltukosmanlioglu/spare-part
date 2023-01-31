@@ -125,7 +125,7 @@ const Contact: NextPage = () => {
                 value: formData.message,
               }}
             />
-            <Button text="SUBMIT" type="submit" />
+            <Button isLoading={isLoading} text="SUBMIT" type="submit" />
           </form>
         </Styled.SendEmail>
       </Styled.Wrapper>

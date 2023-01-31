@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Web = styled.div`
   * {
-    font-family: PThin;
+    font-family: PLight;
   }
 
   box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
@@ -48,7 +48,7 @@ export const MenuItems = styled.div`
     & > a,
     & > p {
       padding: 1.5rem 2.1rem 1.5rem 0;
-      font-size: 16px;
+      font-size: 14.5px;
     }
   }
 `;
@@ -78,7 +78,7 @@ export const SubMenuItems = styled.div`
     }
 
     p {
-      font-size: 15px;
+      font-size: 13.5px;
     }
 
     svg {

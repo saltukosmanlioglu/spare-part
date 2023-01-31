@@ -1,7 +1,8 @@
 import { ButtonType } from "@/utils/types";
 
 export interface ButtonProps {
-  text: string;
+  isLoading: boolean;
   onClick?: () => void;
+  text: string;
   type: ButtonType;
 }
