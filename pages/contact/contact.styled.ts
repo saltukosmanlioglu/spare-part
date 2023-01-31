@@ -40,7 +40,7 @@ export const SendEmail = styled.div`
   h1 {
     font-size: 32px;
     font-family: PSemiBold;
-    color: #252531;
+    color: #b19777;
   }
 
   form {

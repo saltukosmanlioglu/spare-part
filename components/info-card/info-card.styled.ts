@@ -12,10 +12,10 @@ export const InfoCard = styled.div`
     margin-left: 30px;
 
     h3 {
-      font-size: 22px;
-      font-family: PThin;
+      font-size: 20px;
+      font-family: PMedium;
       margin-bottom: 10px;
-      color: #252531;
+      color: #b19777;
     }
 
     a,

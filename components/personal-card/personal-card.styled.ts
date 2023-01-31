@@ -80,5 +80,14 @@ export const PersonalCard = styled.div`
       font-size: 14px;
       font-family: PLight;
     }
+
+    @media screen and (max-width: 600px) {
+      b {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
   }
 `;

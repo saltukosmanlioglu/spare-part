@@ -3,7 +3,7 @@ import { TiTick } from "react-icons/ti";
 import { BiError } from "react-icons/bi";
 
 import { FlagCardProps } from "./types";
-import * as Styled from "./FlagCard.styled";
+import * as Styled from "./flag-card.styled";
 
 const FlagCard: React.FunctionComponent<FlagCardProps> = ({
   message,

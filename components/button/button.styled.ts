@@ -9,7 +9,10 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #252531;
-    color: #fff;
+
+    p {
+      color: #fff;
+    }
 
     svg {
       color: #fff;

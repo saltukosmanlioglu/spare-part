@@ -26,16 +26,6 @@ const Mobile: React.FunctionComponent = () => {
       }
     };
 
-    const subMenuClick = (subMenuItem: any, subMenuIndex: number) => {
-      router.push({
-        pathname: subMenuItem.href,
-        query: {
-          index: subMenuIndex + 1,
-        },
-      });
-      setIsActive(false);
-    };
-
     return isActive ? (
       <Styled.Menu isActive>
         {menuItems.map((item, index) => (
@@ -49,7 +39,7 @@ const Mobile: React.FunctionComponent = () => {
                 {item.subMenuItems?.map((subMenuItem, subMenuIndex) => (
                   <button
                     key={subMenuIndex}
-                    onClick={() => subMenuClick(subMenuItem, subMenuIndex)}
+                    onClick={() => router.push(subMenuItem.href)}
                   >
                     <AiOutlineMinus color="#000" size={8} />
                     <p> {subMenuItem.text}</p>

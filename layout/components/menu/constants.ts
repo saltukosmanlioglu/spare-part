@@ -1,4 +1,6 @@
-export const menuItems = [
+import { MenuItemProps } from "./types";
+
+export const menuItems: Array<MenuItemProps> = [
   {
     href: "/home",
     text: "ANASAYFA",
@@ -19,11 +21,21 @@ export const menuItems = [
   {
     subMenuItems: [
       {
-        href: "/our-solution-partners",
+        href: {
+          pathname: "/our-solution-partners",
+          query: {
+            index: 1,
+          },
+        },
         text: "OES",
       },
       {
-        href: "/our-solution-partners",
+        href: {
+          pathname: "/our-solution-partners",
+          query: {
+            index: 2,
+          },
+        },
         text: "IAM / OEM",
       },
     ],
@@ -32,19 +44,39 @@ export const menuItems = [
   {
     subMenuItems: [
       {
-        href: "/our-products",
+        href: {
+          pathname: "/our-products",
+          query: {
+            index: 1,
+          },
+        },
         text: "Kategori 1",
       },
       {
-        href: "/our-products",
+        href: {
+          pathname: "/our-products",
+          query: {
+            index: 2,
+          },
+        },
         text: "Kategori 2",
       },
       {
-        href: "/our-products",
+        href: {
+          pathname: "/our-products",
+          query: {
+            index: 3,
+          },
+        },
         text: "Kategori 3",
       },
       {
-        href: "/our-products",
+        href: {
+          pathname: "/our-products",
+          query: {
+            index: 4,
+          },
+        },
         text: "Kategori 4",
       },
     ],

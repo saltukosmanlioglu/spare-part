@@ -28,13 +28,7 @@ const Web: React.FunctionComponent = () => {
               {item.subMenuItems && (
                 <Styled.SubMenuItems>
                   {item.subMenuItems.map((subMenuItem, subMenuIndex) => (
-                    <Link
-                      key={subMenuIndex}
-                      href={{
-                        pathname: subMenuItem.href,
-                        query: { index: subMenuIndex + 1 },
-                      }}
-                    >
+                    <Link key={subMenuIndex} href={subMenuItem.href}>
                       <HiOutlineMinusSm color="#b19777" />
                       <p>{subMenuItem.text}</p>
                     </Link>
