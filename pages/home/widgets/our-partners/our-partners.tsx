@@ -1,51 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import { Settings } from "react-slick";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
-import Section from "@/components/section";
-
-import * as Styled from "./our-partners.styled";
 import { ourPartners } from "./constants";
+import * as Styled from "./our-partners.styled";
 
 const OurPartners: React.FunctionComponent = () => {
-  const NextArrow: React.FunctionComponent = (
-    props: React.HTMLAttributes<SVGElement>
-  ) => {
-    const { className, onClick } = props;
-
-    return (
-      <FaLongArrowAltRight
-        className={className}
-        color="#000"
-        onClick={onClick}
-        size={24}
-      />
-    );
-  };
-
-  const PrevArrow: React.FunctionComponent = (
-    props: React.HTMLAttributes<SVGElement>
-  ) => {
-    const { className, onClick } = props;
-
-    return (
-      <FaLongArrowAltLeft
-        className={className}
-        color="#000"
-        onClick={onClick}
-        size={24}
-      />
-    );
-  };
-
   const settings: Settings = {
-    arrows: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     infinite: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     slidesToScroll: 1,
     slidesToShow: 5,
     speed: 200,
@@ -63,13 +27,7 @@ const OurPartners: React.FunctionComponent = () => {
   };
 
   return (
-    <Section
-      padding="80px"
-      mPadding="20px"
-      background=""
-      title="OUR PARTNERS"
-      description="Our Partners"
-    >
+    <Styled.OurPartners>
       <Styled.Slider {...settings}>
         {ourPartners.map((partner, index) => (
           <Styled.Partner key={index}>
@@ -77,7 +35,7 @@ const OurPartners: React.FunctionComponent = () => {
           </Styled.Partner>
         ))}
       </Styled.Slider>
-    </Section>
+    </Styled.OurPartners>
   );
 };
 

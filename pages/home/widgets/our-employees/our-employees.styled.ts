@@ -3,10 +3,10 @@ import Slick from "react-slick";
 
 export const OurEmployees = styled.div`
   position: relative;
-  padding: 80px 25px 80px 160px;
+  padding: 200px 25px 80px 160px;
 
   @media screen and (max-width: 600px) {
-    padding: 60px 20px;
+    padding: 120px 20px 60px;
   }
 `;
 
