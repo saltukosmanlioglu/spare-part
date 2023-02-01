@@ -5,17 +5,18 @@ import { ServiceCardProps } from "./types";
 import * as Styled from "./service-card.styled";
 
 const ServiceCard: React.FunctionComponent<ServiceCardProps> = ({
+  child,
   description,
   href,
-  index,
+  isShadow,
   title,
 }) => {
   return (
-    <Styled.ServiceCard>
-      <b>{index}</b>
+    <Styled.ServiceCard isShadow={isShadow}>
+      {child && <div>{child}</div>}
       <h1>{title}</h1>
       <p>{description}</p>
-      <Link href={href}>READ MORE</Link>
+      {href && <Link href={href}>READ MORE</Link>}
     </Styled.ServiceCard>
   );
 };

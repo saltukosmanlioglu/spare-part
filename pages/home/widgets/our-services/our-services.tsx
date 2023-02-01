@@ -19,25 +19,25 @@ const OurServices: React.FunctionComponent = () => {
         <ServiceCard
           description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
           href="/home"
-          index="01"
+          child={<b>01</b>}
           title="Architecture"
         />
         <ServiceCard
           description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
           href="/home"
-          index="02"
+          child={<b>02</b>}
           title="Interior Design"
         />
         <ServiceCard
           description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
           href="/home"
-          index="03"
+          child={<b>03</b>}
           title="3D Modeling"
         />
         <ServiceCard
           description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
           href="/home"
-          index="04"
+          child={<b>04</b>}
           title="Furniture Design"
         />
         <div>

@@ -100,6 +100,7 @@ export const Lang = styled.div`
 
     p {
       margin-right: 12px;
+      font-size: 14.5px;
     }
   }
 

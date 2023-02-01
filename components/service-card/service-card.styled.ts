@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const ServiceCard = styled.div`
+export const ServiceCard = styled.div<{ isShadow?: boolean }>`
   padding: 60px 40px;
   height: 100%;
   background-color: #fff;
-  border: 0.5px solid #eee;
+  border: ${({ isShadow }) => (!isShadow ? "0.5px solid #eee" : "none")};
   text-align: left;
+  box-shadow: ${({ isShadow }) =>
+    isShadow ? "0px 5px 20px rgb(0 0 0 / 5%)" : "none"};
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -15,7 +17,8 @@ export const ServiceCard = styled.div`
     background-color: rgba(2, 5, 11, 0.6);
 
     p,
-    h1 {
+    h1,
+    svg {
       color: #fff;
     }
 
@@ -24,15 +27,23 @@ export const ServiceCard = styled.div`
     }
   }
 
-  b {
-    font-size: 40px;
-    font-family: PBold;
-    color: transparent;
-    -webkit-text-stroke: 1px #b19777;
+  div {
+    margin-bottom: 30px;
+
+    svg {
+      color: #000;
+    }
+
+    b {
+      font-size: 40px;
+      font-family: PBold;
+      color: transparent;
+      -webkit-text-stroke: 1px #b19777;
+    }
   }
 
   h1 {
-    margin: 30px 0 20px;
+    margin: 0 0 20px;
     font-size: 18px;
     font-family: PSemiBold;
   }
@@ -40,10 +51,10 @@ export const ServiceCard = styled.div`
   p {
     color: #888;
     line-height: 2;
-    margin-bottom: 30px;
   }
 
   a {
+    margin-top: 30px;
     font-size: 12px;
     letter-spacing: 1px;
   }

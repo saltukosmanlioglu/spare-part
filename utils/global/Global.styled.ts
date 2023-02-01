@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::selection {
+    background-color: #000;
+    color: #fff;
+  }
+
   body {
     line-height: 1.4;
   }

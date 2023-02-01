@@ -1,6 +1,9 @@
+import React from "react";
+
 export interface ServiceCardProps {
+  child?: React.ReactNode;
   description: string;
-  href: string;
-  index: string | number;
+  href?: string;
+  isShadow?: boolean;
   title: string;
 }
