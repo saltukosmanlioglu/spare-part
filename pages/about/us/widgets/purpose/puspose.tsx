@@ -9,7 +9,6 @@ import * as Styled from "./purpose.styled";
 const Puspose: React.FunctionComponent = () => {
   return (
     <Styled.Purpose>
-      <h1>AUTO RAR</h1>
       <Styled.Wrapper>
         {purposes.map((purpose, index) => (
           <div key={index}>

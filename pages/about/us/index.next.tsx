@@ -2,6 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import dynamic from "next/dynamic";
 
+import Information from "./widgets/information";
 import Percentages from "./widgets/percentages";
 import Purpose from "./widgets/purpose";
 
@@ -18,6 +19,7 @@ const Us: NextPage = () => {
       }}
     >
       <Styled.Us>
+        <Information />
         <Purpose />
         <Percentages />
       </Styled.Us>
