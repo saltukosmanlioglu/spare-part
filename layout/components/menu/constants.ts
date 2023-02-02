@@ -27,7 +27,7 @@ export const menuItems: Array<MenuItemProps> = [
             index: 1,
           },
         },
-        text: "OES",
+        text: "AFTER MARKET",
       },
       {
         href: {
@@ -36,7 +36,7 @@ export const menuItems: Array<MenuItemProps> = [
             index: 2,
           },
         },
-        text: "IAM / OEM",
+        text: "OEM",
       },
     ],
     text: "ÇÖZÜM ORTAKLARIMIZ",
@@ -44,40 +44,48 @@ export const menuItems: Array<MenuItemProps> = [
   {
     subMenuItems: [
       {
-        href: {
-          pathname: "/our-products",
-          query: {
-            index: 1,
-          },
-        },
-        text: "Kategori 1",
+        href: "/our-products",
+        text: "Kaporta",
       },
       {
-        href: {
-          pathname: "/our-products",
-          query: {
-            index: 2,
-          },
-        },
-        text: "Kategori 2",
+        href: "/our-products",
+        text: "Motor",
       },
       {
-        href: {
-          pathname: "/our-products",
-          query: {
-            index: 3,
-          },
-        },
-        text: "Kategori 3",
+        href: "/our-products",
+        text: "Elektrik",
       },
       {
-        href: {
-          pathname: "/our-products",
-          query: {
-            index: 4,
-          },
-        },
-        text: "Kategori 4",
+        href: "/our-products",
+        text: "Süspansiyon",
+      },
+      {
+        href: "/our-products",
+        text: "Filtreler",
+      },
+      {
+        href: "/our-products",
+        text: "Fren Sistemi",
+      },
+      {
+        href: "/our-products",
+        text: "Şanzıman",
+      },
+      {
+        href: "/our-products",
+        text: "Yağlar",
+      },
+      {
+        href: "/our-products",
+        text: "Egzoz",
+      },
+      {
+        href: "/our-products",
+        text: "Diferansiyel",
+      },
+      {
+        href: "/our-products",
+        text: "Oto Bakım Ürünleri",
       },
     ],
     text: "ÜRÜNLERİMİZ",
