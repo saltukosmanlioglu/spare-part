@@ -3,17 +3,21 @@ import { NextPage } from "next";
 import dynamic from "next/dynamic";
 
 import PersonalCard from "@/components/personal-card";
+import { useLanguage } from "@/utils/hooks";
 
+import { ourTeamEn, ourTeamTr } from "./lang";
 import { personals } from "./constants";
 import * as Styled from "./our-team.styled";
 
 const DynamicMainLayout = dynamic(() => import("@/layout/main"));
 
 const OurTeam: NextPage = () => {
+  const { lang } = useLanguage(ourTeamTr, ourTeamEn);
+
   return (
     <DynamicMainLayout
       breadcrumb={{
-        data: [{ text: "About - Our Team" }],
+        data: [{ text: lang.breadcrumbTitle }],
         image: "/images/layout/breadcrumb/1.jpg",
       }}
     >

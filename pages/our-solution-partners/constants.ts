@@ -1,13 +1,7 @@
 import { SolutionPartnersEnum } from "@/utils/types";
-import { FilterBarDataProps, FilterBarProps } from "@/widgets/filter-bar/types";
+import { FilterBarProps } from "@/widgets/filter-bar/types";
 
 import { PartnerProps } from "./types";
-
-export const categories: Array<FilterBarDataProps> = [
-  { text: "HEPSİ" },
-  { text: "AFTER MARKET" },
-  { text: "OEM" },
-];
 
 export const partners: FilterBarProps<PartnerProps>["data"] = [
   {

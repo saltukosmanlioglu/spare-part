@@ -6,7 +6,9 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { BsPlus } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
 
-import { menuItems } from "../constants";
+import { useLanguage } from "@/utils/hooks";
+
+import { menuEn, menuTr } from "../lang";
 import * as Styled from "./mobile.styled";
 
 const Mobile: React.FunctionComponent = () => {
@@ -15,6 +17,8 @@ const Mobile: React.FunctionComponent = () => {
   const [activeIndex, setActiveIndex] = useState<number>();
 
   const router = useRouter();
+
+  const { lang } = useLanguage(menuTr, menuEn);
 
   const Menu = () => {
     const onClick = (item: any, index: number) => {
@@ -28,7 +32,7 @@ const Mobile: React.FunctionComponent = () => {
 
     return isActive ? (
       <Styled.Menu isActive>
-        {menuItems.map((item, index) => (
+        {lang.menuItems.map((item, index) => (
           <div key={index}>
             <button onClick={() => onClick(item, index)}>
               <p>{item.text}</p>

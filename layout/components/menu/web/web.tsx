@@ -5,11 +5,16 @@ import Link from "next/link";
 import { TfiWorld } from "react-icons/tfi";
 import { HiOutlineMinusSm } from "react-icons/hi";
 
-import { languages, menuItems } from "../constants";
+import { useLanguage } from "@/utils/hooks";
+
+import { languages } from "../constants";
+import { menuEn, menuTr } from "../lang";
 import * as Styled from "./web.styled";
 
 const Web: React.FunctionComponent = () => {
   const router = useRouter();
+
+  const { lang } = useLanguage(menuTr, menuEn);
 
   return (
     <Styled.Web>
@@ -18,7 +23,7 @@ const Web: React.FunctionComponent = () => {
           <Image alt="Auto RAR" fill src="/images/logo/logo-dark.png" />
         </Link>
         <Styled.MenuItems>
-          {menuItems.map((item, index) => (
+          {lang.menuItems.map((item, index) => (
             <div key={index}>
               {item.href ? (
                 <Link href={item.href}>{item.text}</Link>

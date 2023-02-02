@@ -2,15 +2,18 @@ import React from "react";
 import Image from "next/image";
 
 import ServiceCard from "@/components/service-card";
+import { useLanguage } from "@/utils/hooks";
 
-import { purposes } from "./constants";
+import { purposeEn, purposeTr } from "./lang";
 import * as Styled from "./purpose.styled";
 
 const Puspose: React.FunctionComponent = () => {
+  const { lang } = useLanguage(purposeTr, purposeEn);
+
   return (
     <Styled.Purpose>
       <Styled.Wrapper>
-        {purposes.map((purpose, index) => (
+        {lang.purposes.map((purpose, index) => (
           <div key={index}>
             <Image alt="Misyon - Auto RAR" fill src={purpose.src} />
             <ServiceCard isShadow {...purpose.service} />

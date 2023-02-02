@@ -9,10 +9,12 @@ import { TbMailOpened } from "react-icons/tb";
 import Button from "@/components/button";
 import InfoCard from "@/components/info-card";
 import emailService, { SendEmailRequest } from "@/services/send-email";
+import { useLanguage } from "@/utils/hooks";
 
 import TextArea from "./components/text-area";
 import TextField from "./components/text-field";
 
+import { contactEn, contactTr } from "./lang";
 import * as Styled from "./contact.styled";
 
 const DynamicMainLayout = dynamic(() => import("@/layout/main"));
@@ -25,6 +27,8 @@ const Contact: NextPage = () => {
     phoneNumber: "",
   });
   const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const { lang } = useLanguage(contactTr, contactEn);
 
   const handleFieldChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -52,7 +56,7 @@ const Contact: NextPage = () => {
   return (
     <DynamicMainLayout
       breadcrumb={{
-        data: [{ text: "Contact" }],
+        data: [{ text: lang.breadcrumbTitle }],
         image: "/images/layout/breadcrumb/1.jpg",
       }}
     >
@@ -63,14 +67,14 @@ const Contact: NextPage = () => {
             description={
               <Link href="tel:+7 (111) 1234 56789">+7 (111) 1234 56789</Link>
             }
-            title="Call Us"
+            title={lang.callUs}
           />
           <InfoCard
             icon={<TbMailOpened color="#252531" size={40} />}
             description={
               <Link href="mailto:contact@Archo.com">contact@Archo.com</Link>
             }
-            title="Email Us"
+            title={lang.emailUs}
           />
           <InfoCard
             icon={<MdLocationOn color="#252531" size={40} />}
@@ -79,17 +83,17 @@ const Contact: NextPage = () => {
                 B17 Princess Road, London, Greater London NW18JR, United Kingdom
               </Link>
             }
-            title="Address"
+            title={lang.address}
           />
         </div>
         <Styled.SendEmail>
-          <h1>CONTACT US</h1>
+          <h1>{lang.contactUs}</h1>
           <form onSubmit={handleSubmit}>
             <TextField
               textField={{
                 name: "fullName",
                 onChange: (e) => handleFieldChange(e),
-                placeholder: "NAME - SURNAME",
+                placeholder: lang.fullName,
                 required: true,
                 type: "text",
                 value: formData.fullName,
@@ -99,7 +103,7 @@ const Contact: NextPage = () => {
               textField={{
                 name: "phoneNumber",
                 onChange: (e) => handleFieldChange(e),
-                placeholder: "PHONE NUMBER",
+                placeholder: lang.phoneNumber,
                 required: true,
                 type: "tel",
                 value: formData.phoneNumber,
@@ -109,7 +113,7 @@ const Contact: NextPage = () => {
               textField={{
                 name: "email",
                 onChange: (e) => handleFieldChange(e),
-                placeholder: "EMAIL",
+                placeholder: lang.email,
                 required: true,
                 type: "email",
                 value: formData.email,
@@ -119,13 +123,17 @@ const Contact: NextPage = () => {
               textArea={{
                 name: "message",
                 onChange: (e) => handleFieldChange(e),
-                placeholder: "MESSAGE",
+                placeholder: lang.message,
                 required: true,
                 rows: 6,
                 value: formData.message,
               }}
             />
-            <Button isLoading={isLoading} text="SUBMIT" type="submit" />
+            <Button
+              isLoading={isLoading}
+              text={lang.submitText}
+              type="submit"
+            />
           </form>
         </Styled.SendEmail>
       </Styled.Wrapper>

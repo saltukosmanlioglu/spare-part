@@ -36,7 +36,7 @@ export const ourProducts = {
       src: "/images/layout/breadcrumb/1.jpg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
-      title: "Brake system",
+      title: "Brake System",
     },
     {
       src: "/images/layout/breadcrumb/1.jpg",
