@@ -28,7 +28,7 @@ export const Product = styled.div`
   height: 350px;
   width: calc((100% / 4) - 30px);
 
-  div {
+  & > div:nth-child(1) {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,6 @@ export const Product = styled.div`
 
   img {
     object-fit: cover;
-    object-position: cover;
     z-index: -1;
   }
 `;

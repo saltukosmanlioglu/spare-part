@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   & > a:first-child {
-    width: 100px;
-    height: 23px;
+    width: 225px;
+    height: 52px;
     position: relative;
 
     img {

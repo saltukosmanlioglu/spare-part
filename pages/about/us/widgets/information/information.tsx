@@ -28,7 +28,11 @@ const Information: React.FunctionComponent = () => {
         </Styled.AboutFirm>
         <Styled.Logo>
           <Styled.Border>
-            <Image alt="Auto De Part" fill src="/images/logo/logo-dark.png" />
+            <Image
+              alt="Auto De Part"
+              fill
+              src="/images/logo/auto-depart-logo-1.png"
+            />
           </Styled.Border>
         </Styled.Logo>
       </Styled.Wrapper>

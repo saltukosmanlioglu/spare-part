@@ -1,1 +1,1 @@
-export { onScroll } from "./procedure";
+export { onScroll, yearsOfExperiences } from "./procedure";

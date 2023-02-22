@@ -20,7 +20,11 @@ const Web: React.FunctionComponent = () => {
     <Styled.Web>
       <Styled.Wrapper>
         <Link href="/home">
-          <Image alt="Auto De Part" fill src="/images/logo/logo-dark.png" />
+          <Image
+            alt="Auto De Part"
+            fill
+            src="/images/logo/auto-depart-logo-horizontal.png"
+          />
         </Link>
         <Styled.MenuItems>
           {lang.menuItems.map((item, index) => (

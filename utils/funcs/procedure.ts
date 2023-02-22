@@ -3,3 +3,5 @@ export const onScroll = (top?: number) =>
     behavior: "smooth",
     top: top || 0,
   });
+
+export const yearsOfExperiences = new Date().getFullYear() - 2015;

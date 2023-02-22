@@ -56,7 +56,7 @@ export const Border = styled.div`
 
   img {
     padding: 20px;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   &:after {
