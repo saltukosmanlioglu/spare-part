@@ -3,61 +3,61 @@ export const ourProducts = {
   ourProduct: "OUR PRODUCTS",
   products: [
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/kaporta.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Bodywork",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/motor.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Engine",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/oto-elektrik.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Electricity",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/suspansiyon.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Suspension",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/filtreler.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Filters",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/fren-sistemi.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Brake System",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/sanziman.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Gearbox",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/yaglar.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Oils",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/egzoz.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Exhaust",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/diferansiyel.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Differential",

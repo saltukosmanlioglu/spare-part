@@ -16,7 +16,11 @@ const ServiceCard: React.FunctionComponent<ServiceCardProps> = ({
       {child && <div>{child}</div>}
       <h1>{title}</h1>
       <p>{description}</p>
-      {href && <Link href={href}>READ MORE</Link>}
+      {href && (
+        <Link href={href}>
+          <p>READ MORE</p>
+        </Link>
+      )}
     </Styled.ServiceCard>
   );
 };

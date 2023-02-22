@@ -54,8 +54,10 @@ export const ServiceCard = styled.div<{ isShadow?: boolean }>`
   }
 
   a {
-    margin-top: 30px !important;
-    font-size: 12px;
-    letter-spacing: 1px;
+    p {
+      margin-top: 30px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
   }
 `;

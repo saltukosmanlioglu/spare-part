@@ -70,7 +70,7 @@ const Mobile: React.FunctionComponent = () => {
     <Styled.Mobile>
       <Styled.Wrapper>
         <Link href="/home">
-          <Image alt="Auto RAR" fill src="/images/logo/logo-dark.png" />
+          <Image alt="Auto De Part" fill src="/images/logo/logo-dark.png" />
         </Link>
         <button onClick={() => setIsActive(!isActive)}>
           <HiMenu color="#000" size={32} />

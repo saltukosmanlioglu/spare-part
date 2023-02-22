@@ -15,7 +15,7 @@ const Puspose: React.FunctionComponent = () => {
       <Styled.Wrapper>
         {lang.purposes.map((purpose, index) => (
           <div key={index}>
-            <Image alt="Misyon - Auto RAR" fill src={purpose.src} />
+            <Image alt="Misyon - Auto De Part" fill src={purpose.src} />
             <ServiceCard isShadow {...purpose.service} />
           </div>
         ))}

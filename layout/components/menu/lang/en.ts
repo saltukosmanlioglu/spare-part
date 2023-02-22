@@ -8,7 +8,7 @@ export const menu = {
       subMenuItems: [
         {
           href: "/about/us",
-          text: "Auto RAR",
+          text: "Auto De Part",
         },
         {
           href: "/about/our-team",

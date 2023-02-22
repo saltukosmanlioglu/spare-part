@@ -3,61 +3,61 @@ export const ourProducts = {
   ourProduct: "ÜRÜNLERİMİZ",
   products: [
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/kaporta.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Kaporta",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/motor.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Motor",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/oto-elektrik.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Elektrik",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/suspansiyon.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Süspansiyon",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/filtreler.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Filtreler",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/fren-sistemi.png",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Fren Sistemi",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/sanziman.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Şanzıman",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/yaglar.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Yağlar",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/egzoz.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Egzoz",
     },
     {
-      src: "/images/layout/breadcrumb/1.jpg",
+      src: "/images/products/diferansiyel.jpeg",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, asperiores soluta quod dignissimos fuga pariatur.",
       title: "Diferansiyel",

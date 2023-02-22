@@ -1,3 +1,3 @@
 export const us = {
-  breadcrumbTitle: "Hakkımızda - AUTO RAR",
+  breadcrumbTitle: "Hakkımızda - Auto De Part",
 };

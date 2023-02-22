@@ -9,7 +9,7 @@ export const menuItems: Array<MenuItemProps> = [
     subMenuItems: [
       {
         href: "/about/us",
-        text: "Auto RAR",
+        text: "Auto De Part",
       },
       {
         href: "/about/our-team",
