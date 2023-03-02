@@ -8,7 +8,7 @@ export const purpose = {
       service: {
         child: <MdAssignmentTurnedIn size={52} />,
         description:
-          "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat. Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+          "As autodepart family our mission is to provide quality, good price, complete and fast product service. ",
         title: "MISSION",
       },
     },
@@ -17,7 +17,7 @@ export const purpose = {
       service: {
         child: <MdOutlineLocalActivity size={52} />,
         description:
-          "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat. Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+          "Within the technological developments; it is to work in the supply of spare parts with an innovative team that keeps up with the world. ",
         title: "VISION",
       },
     },
@@ -26,8 +26,8 @@ export const purpose = {
       service: {
         child: <GiMultipleTargets size={52} />,
         description:
-          "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat. Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
-        title: "TARGET",
+          "Our aim is to provide superior and quality service to the world in the supply of automotive spare parts.",
+        title: "GOAL",
       },
     },
   ],

@@ -3,10 +3,14 @@ import { AiOutlineMinus } from "react-icons/ai";
 import CountUp from "react-countup";
 
 import Frame from "@/components/frame";
+import { useLanguage } from "@/utils/hooks";
 
+import { aboutUsEn, aboutUsTr } from "./lang";
 import * as Styled from "./about-us.styled";
 
 const AboutUs: React.FunctionComponent = () => {
+  const { lang } = useLanguage(aboutUsTr, aboutUsEn);
+
   return (
     <Styled.AboutUs>
       <Styled.Wrapper>
@@ -18,15 +22,7 @@ const AboutUs: React.FunctionComponent = () => {
             <AiOutlineMinus color="#b19777" size={28} />
             <b>ABOUT US</b>
           </div>
-          <h3>
-            Best Designers <br /> Architectures for You.
-          </h3>
-          <p>
-            Architecture bibendum pharetra eleifend. Suspendisse vel volutpat
-            purus, sit amet bibendum nisl. Cras mollis turpis a ipsum ultes, nec
-            condimentum ipsum consequat. Mauris vitae consequat nibh, vitae
-            interdum mi.
-          </p>
+          {lang.us}
           <Styled.Counts>
             <div>
               <h1>

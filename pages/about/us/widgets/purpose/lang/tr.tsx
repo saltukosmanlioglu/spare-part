@@ -8,7 +8,7 @@ export const purpose = {
       service: {
         child: <MdAssignmentTurnedIn size={52} />,
         description:
-          "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat. Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+          "AutoDePart ailesi olarak kaliteli, iyi fiyat, eksiksiz ve hızlı ürün tedariği sunmaktır.",
         title: "MİSYON",
       },
     },
@@ -17,7 +17,7 @@ export const purpose = {
       service: {
         child: <MdOutlineLocalActivity size={52} />,
         description:
-          "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat. Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+          "Teknolojik gelişmeler çerçevesinde yenilikçi dünyaya ayak uyduran ekip ile birlikte yedek parça tedariğinde çalışmalar gerçekleştirmek.",
         title: "VİZYON",
       },
     },
@@ -26,7 +26,7 @@ export const purpose = {
       service: {
         child: <GiMultipleTargets size={52} />,
         description:
-          "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat. Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.",
+          "Otomotik yedek parça sektöründe tüm dünyaya üstün ve kaliteli sunmak",
         title: "HEDEF",
       },
     },

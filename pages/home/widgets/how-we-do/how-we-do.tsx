@@ -1,80 +1,54 @@
 import React from "react";
-import dynamic from "next/dynamic";
+import { GoPackage } from "react-icons/go";
 
 import Section from "@/components/section";
 
-const DynamicStages = dynamic(() => import("@/widgets/stages"));
+import * as Styled from "./how-we-do.styled";
+import { ImTruck } from "react-icons/im";
+import { FaRegHandshake, FaWarehouse } from "react-icons/fa";
+import { HiDocumentCheck } from "react-icons/hi2";
 
 const HowWeDo: React.FunctionComponent = () => {
   return (
     <Section
-      background="#fff"
+      background="#fff url('/images/home/dots.png')"
       description="How we do"
       mPadding="20px"
       padding="80px 120px"
       title="How We Do ?"
     >
-      <DynamicStages
-        captions={[
-          { title: "2012" },
-          { title: "2015" },
-          { title: "2017" },
-          { title: "2021" },
-          { title: "2023" },
-        ]}
-        stages={[
-          {
-            component: (
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem,
-                dolorum at! Rerum deleniti earum debitis quam sint unde qui
-                magni! Quaerat autem a fuga aperiam placeat in totam excepturi
-                saepe.
-              </p>
-            ),
-          },
-          {
-            component: (
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem,
-                dolorum at! Rerum deleniti earum debitis quam sint unde qui
-                magni! Quaerat autem a fuga aperiam placeat in totam excepturi
-                saepe.
-              </p>
-            ),
-          },
-          {
-            component: (
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem,
-                dolorum at! Rerum deleniti earum debitis quam sint unde qui
-                magni! Quaerat autem a fuga aperiam placeat in totam excepturi
-                saepe.
-              </p>
-            ),
-          },
-          {
-            component: (
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem,
-                dolorum at! Rerum deleniti earum debitis quam sint unde qui
-                magni! Quaerat autem a fuga aperiam placeat in totam excepturi
-                saepe.
-              </p>
-            ),
-          },
-          {
-            component: (
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem,
-                dolorum at! Rerum deleniti earum debitis quam sint unde qui
-                magni! Quaerat autem a fuga aperiam placeat in totam excepturi
-                saepe.
-              </p>
-            ),
-          },
-        ]}
-      />
+      <Styled.Wrapper>
+        <Styled.Circle>
+          <div>
+            <FaRegHandshake color="#fff" size={70} />
+          </div>
+          <b>Satış</b>
+        </Styled.Circle>
+        <Styled.Circle>
+          <div>
+            <GoPackage color="#fff" size={70} />
+          </div>
+          <b>Tedarik</b>
+        </Styled.Circle>
+        <Styled.Circle>
+          <div>
+            <FaWarehouse color="#fff" size={70} />
+          </div>
+          <b>Depolama</b>
+        </Styled.Circle>
+        <Styled.Circle>
+          <div>
+            <ImTruck color="#fff" size={70} />
+          </div>
+          <b>Lojistik</b>
+        </Styled.Circle>
+        <Styled.Circle>
+          <div>
+            <HiDocumentCheck color="#fff" size={70} />
+          </div>
+          <b>Gümrük</b>
+        </Styled.Circle>
+      </Styled.Wrapper>
     </Section>
   );
 };

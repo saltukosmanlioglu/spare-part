@@ -17,28 +17,28 @@ const OurServices: React.FunctionComponent = () => {
     >
       <Styled.Wrapper>
         <ServiceCard
-          description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+          description="Müşterilerimizin ihtiyaçlarına yönelik etkili ve doğru çözümler sunmak."
           href="/home"
           child={<b>01</b>}
-          title="Architecture"
+          title="Tedarik"
         />
         <ServiceCard
-          description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+          description="Ürünlerimizin stoklanmasında, paketlenmesinde ve gönderim aşamasında kaliteli hizmet."
           href="/home"
           child={<b>02</b>}
-          title="Interior Design"
+          title="Depolama"
         />
         <ServiceCard
-          description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+          description="Tecrübe sahibi ekibimizle tüm dünyaya güvenilir ve hızlı teslimatı sağlamak."
           href="/home"
           child={<b>03</b>}
-          title="3D Modeling"
+          title="Lojistik"
         />
         <ServiceCard
           description="Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
           href="/home"
           child={<b>04</b>}
-          title="Furniture Design"
+          title="Gümrükleme"
         />
         <div>
           <Image alt="" fill src="/images/home/our-services.jpg" />
