@@ -72,15 +72,18 @@ const Contact: NextPage = () => {
           <InfoCard
             icon={<TbMailOpened color="#252531" size={40} />}
             description={
-              <Link href="mailto:contact@Archo.com">contact@Archo.com</Link>
+              <Link href="mailto:info@autodepart.com">info@autodepart.com</Link>
             }
             title={lang.emailUs}
           />
           <InfoCard
             icon={<MdLocationOn color="#252531" size={40} />}
             description={
-              <Link href="/home" target="_blank">
-                B17 Princess Road, London, Greater London NW18JR, United Kingdom
+              <Link
+                href="https://www.google.com/maps/place/Atalar,+Kanun+Sk.+No:1,+34862+Kartal%2F%C4%B0stanbul/data=!4m2!3m1!1s0x14cac477b84e017d:0xe9cea68d9c2b41df?sa=X&ved=2ahUKEwins6DztuX9AhVrRPEDHcqYC1IQ8gF6BAgIEAI"
+                target="_blank"
+              >
+                Atalar Mahallesi, Kanun Sokak, No: 1, Kartal / İstanbul 34862
               </Link>
             }
             title={lang.address}

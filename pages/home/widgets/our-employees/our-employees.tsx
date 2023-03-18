@@ -84,33 +84,33 @@ const OurEmployees: React.FunctionComponent = () => {
         </Styled.Information>
         <Styled.Personals ref={slickRef} {...settings}>
           <PersonalCard
-            image="/images/about/team/1.jpg"
-            name="Leio Man"
-            profession="Founder"
+            image="/images/user.jpeg"
+            name="Recep Barhan"
+            profession="Kurucu"
             socialMedia={{
               linkedin: "",
             }}
           />
           <PersonalCard
-            image="/images/about/team/2.jpg"
-            name="Hasib Sharif"
-            profession="General Manager"
+            image="/images/user.jpeg"
+            name="Baran Babataş"
+            profession="Satış Sorumlusu"
             socialMedia={{
               linkedin: "",
             }}
           />
           <PersonalCard
-            image="/images/about/team/3.jpg"
-            name="Robert Front"
-            profession="Ceo Founder"
+            image="/images/user.jpeg"
+            name="Berkin Babataş"
+            profession="Satış Sorumlusu"
             socialMedia={{
               linkedin: "",
             }}
           />
           <PersonalCard
-            image="/images/about/team/4.jpg"
-            name="Jonson Leo"
-            profession="Founder"
+            image="/images/user.jpeg"
+            name="Eren Köse"
+            profession="Depo Sorumlusu"
             socialMedia={{
               linkedin: "",
             }}

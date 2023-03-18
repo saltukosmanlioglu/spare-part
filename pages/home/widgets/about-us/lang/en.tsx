@@ -1,9 +1,7 @@
 export const aboutUs = {
   us: (
     <>
-      <h3>
-        Best Designers <br /> Architectures for You.
-      </h3>
+      <h3>Auto De Part</h3>
       <p>
         AutoDePart ailesi, Türkiye pazarında otomotiv yedek parça üreticilerinin
         ve tedarikçilerinin ihracatına odaklanmıştır.

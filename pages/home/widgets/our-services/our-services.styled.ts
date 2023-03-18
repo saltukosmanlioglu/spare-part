@@ -8,12 +8,14 @@ export const Wrapper = styled.div`
 
   & > div {
     z-index: 2;
+    width: 25%;
+    height: 400px;
   }
 
   & > div:last-child {
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 400px;
     z-index: 0;
 
     img {

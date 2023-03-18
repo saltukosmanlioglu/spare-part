@@ -25,24 +25,24 @@ const Footer: React.FunctionComponent = () => {
         <h3>{lang.contactUs}</h3>
         <Styled.ContactUs>
           <IoLocationOutline color="#fff" size={30} />
-          <div>
+          <Link href="https://www.google.com/maps/place/Atalar,+Kanun+Sk.+No:1,+34862+Kartal%2F%C4%B0stanbul/data=!4m2!3m1!1s0x14cac477b84e017d:0xe9cea68d9c2b41df?sa=X&ved=2ahUKEwins6DztuX9AhVrRPEDHcqYC1IQ8gF6BAgIEAI">
             <h6>{lang.address}</h6>
-            <p>504 White St . Dawsonville, GA 30534 , New York</p>
-          </div>
+            <p>Atalar Mahallesi, Kanun Sokak, No: 1, Kartal / İstanbul 34862</p>
+          </Link>
         </Styled.ContactUs>
         <Styled.ContactUs>
           <GoMail color="#fff" size={30} />
-          <div>
+          <Link href="/contact">
             <h6>{lang.emailUs}</h6>
-            <p>support@gmail.com</p>
-          </div>
+            <p>info@autodepart.com</p>
+          </Link>
         </Styled.ContactUs>
         <Styled.ContactUs>
           <BsTelephone color="#fff" size={30} />
-          <div>
+          <Link href="tel:87986451666">
             <h6>{lang.callUs}</h6>
             <p>+87986451666</p>
-          </div>
+          </Link>
         </Styled.ContactUs>
       </div>
     );
@@ -89,7 +89,13 @@ const Footer: React.FunctionComponent = () => {
   const Logo = () => {
     return (
       <div>
-        <Image alt="Logo" height={23} width={100} src="/images/logo/logo.png" />
+        <Styled.Logo>
+          <Image
+            alt="Logo"
+            fill
+            src="/images/logo/auto-depart-logo-horizontal.png"
+          />
+        </Styled.Logo>
         <Styled.SocialMedia>
           <Link href="/home">
             <BsLinkedin color="#fff" size={18} />

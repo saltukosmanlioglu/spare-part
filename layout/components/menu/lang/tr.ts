@@ -12,10 +12,10 @@ export const menu = {
           href: "/about/us",
           text: "Auto De Part",
         },
-        {
-          href: "/about/our-team",
-          text: "Takımımız",
-        },
+        // {
+        //   href: "/about/our-team",
+        //   text: "Takımımız",
+        // },
       ],
       text: "HAKKIMIZDA",
     },

@@ -56,7 +56,8 @@ export const ContactUs = styled.div`
     margin: 0 0 25px;
   }
 
-  & > div {
+  & > div,
+  a {
     margin-left: 30px;
 
     h6 {
@@ -125,6 +126,20 @@ export const SendMail = styled.div`
     width: 60px !important;
     height: 50px;
     border-radius: 50%;
+  }
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 225px;
+  height: 52px;
+  margin-bottom: 20px;
+
+  & > img {
+    object-fit: cover;
   }
 `;
 

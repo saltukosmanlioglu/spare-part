@@ -10,10 +10,10 @@ export const menu = {
           href: "/about/us",
           text: "Auto De Part",
         },
-        {
-          href: "/about/our-team",
-          text: "Our Team",
-        },
+        // {
+        //   href: "/about/our-team",
+        //   text: "Our Team",
+        // },
       ],
       text: "ABOUT US",
     },
