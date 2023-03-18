@@ -133,6 +133,7 @@ const Contact: NextPage = () => {
               }}
             />
             <Button
+              isDisabled={isLoading}
               isLoading={isLoading}
               text={lang.submitText}
               type="submit"
@@ -143,7 +144,7 @@ const Contact: NextPage = () => {
       <Styled.Map>
         <iframe
           height={400}
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.476950229072!2d29.17193000000001!3d40.9052871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac477b84e017d%3A0xe9cea68d9c2b41df!2sAtalar%2C%20Kanun%20Sk.%20No%3A1%2C%2034862%20Kartal%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1679147561727!5m2!1str!2str"
           width="100%"
         />
       </Styled.Map>

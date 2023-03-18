@@ -4,18 +4,21 @@ import nodemailer from "nodemailer";
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
     let transporter = nodemailer.createTransport({
-      secure: true,
-      service: "gmail",
-      port: 465,
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false,
+      tls: {
+        ciphers: "SSLv3",
+      },
       auth: {
-        user: "milamimarlikofis@gmail.com",
+        user: "info@autodepart.com",
         pass: process.env.password,
       },
     });
 
     let info = {
-      from: "milamimarlikofis@gmail.com",
-      subject: "Mila Cami Projeleri",
+      from: "info@autodepart.com",
+      subject: "Auto De Part",
       html: `
       <div>
         <b style="display: block;">Gönderen kişi: ${req.body.fullName}</b> <br />
@@ -23,7 +26,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         <b style="display: block;">Gönderen telefon: ${req.body.phoneNumber}</b> <br />
         <b style="display: block;">Yorum: ${req.body.message}</b>
       </div>`,
-      to: "milamimarlikofis@gmail.com",
+      to: "info@autodepart.com",
     };
 
     transporter.sendMail(info, (err, info) => {
