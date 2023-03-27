@@ -23,7 +23,7 @@ const OurSolutionPartners: NextPage = () => {
     <DynamicMainLayout
       breadcrumb={{
         data: [{ text: lang.breadcrumbTitle }],
-        image: "/images/layout/breadcrumb/1.jpg",
+        image: "/images/products/sanziman.jpeg",
       }}
     >
       <Styled.OurSolutionPartners>

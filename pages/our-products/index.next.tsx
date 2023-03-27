@@ -17,7 +17,7 @@ const OurProducts: NextPage = () => {
     <DynamicMainLayout
       breadcrumb={{
         data: [{ text: lang.breadcrumbTitle }],
-        image: "/images/layout/breadcrumb/1.jpg",
+        image: "/images/products/filtreler.jpeg",
       }}
     >
       <Styled.OurProducts>
