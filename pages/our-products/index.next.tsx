@@ -21,7 +21,7 @@ const OurProducts: NextPage = () => {
       }}
     >
       <Styled.OurProducts>
-        <Styled.PageDetail>
+        {/* <Styled.PageDetail>
           <h3>ÜRÜNLERİMİZ HAKKINDA</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
@@ -36,7 +36,7 @@ const OurProducts: NextPage = () => {
             sed magni. Minus dolore suscipit quibusdam doloribus? Ab consequatur
             sed eos veritatis harum.
           </p>
-        </Styled.PageDetail>
+        </Styled.PageDetail> */}
         <Styled.Content>
           <h1>{lang.ourProduct}</h1>
           <Styled.DataWrapper>

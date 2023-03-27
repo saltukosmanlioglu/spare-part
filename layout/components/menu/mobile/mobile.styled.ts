@@ -16,9 +16,13 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   & > a {
-    width: 60px;
-    height: 14px;
+    width: 120px;
+    height: 50px;
     position: relative;
+
+    img {
+      object-fit: cover;
+    }
   }
 `;
 

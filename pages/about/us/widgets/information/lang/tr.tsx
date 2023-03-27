@@ -1,9 +1,10 @@
 export const information = {
   us: (
     <div>
-      <b>
+      {/* <b>
         Creative Solutions <br /> by Professional <br /> Designers
-      </b>
+      </b> */}
+      <b>Auto De Part</b>
       <p>
         AutoDePart ailesi, Türkiye pazarında otomotiv yedek parça üreticilerinin
         ve tedarikçilerinin ihracatına odaklanmıştır.

@@ -11,6 +11,10 @@ export const OurProducts = styled.div`
 export const PageDetail = styled.div`
   padding: 0 160px 40px;
 
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
+
   h3 {
     font-size: 24px;
     font-family: PThin;
@@ -66,8 +70,6 @@ export const Product = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 40px 0;
-
   h1 {
     padding: 8px 0;
     background: url("/images/home/line-pattern.png") repeat;
@@ -79,7 +81,7 @@ export const Content = styled.div`
 `;
 
 export const DataWrapper = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;

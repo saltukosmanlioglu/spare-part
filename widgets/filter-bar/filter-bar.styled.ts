@@ -86,7 +86,7 @@ export const MobileFilter = styled.div`
     display: block;
     background-color: #fff;
     position: sticky;
-    top: 62px;
+    top: 82px;
     z-index: 10000;
     box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
 

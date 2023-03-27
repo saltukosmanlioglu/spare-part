@@ -9,9 +9,20 @@ export const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const Circle = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+
   & > div {
     border-radius: 50%;
     width: 150px;
@@ -21,6 +32,11 @@ export const Circle = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 20px !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    height: 200px;
   }
 
   b {

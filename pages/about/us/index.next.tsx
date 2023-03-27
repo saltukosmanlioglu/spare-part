@@ -26,7 +26,7 @@ const Us: NextPage = () => {
       <Styled.Us>
         <Information />
         <Purpose />
-        <Percentages />
+        {/* <Percentages /> */}
       </Styled.Us>
     </DynamicMainLayout>
   );

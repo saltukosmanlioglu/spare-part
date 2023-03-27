@@ -13,6 +13,10 @@ export const ServiceCard = styled.div<{ isShadow?: boolean }>`
   -o-transition: all 0.4s;
   transition: all 0.4s;
 
+  @media screen and (max-width: 600px) {
+    padding: 20px 30px;
+  }
+
   &:hover {
     background-color: rgba(2, 5, 11, 0.6);
 
