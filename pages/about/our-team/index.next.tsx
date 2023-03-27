@@ -20,6 +20,7 @@ const OurTeam: NextPage = () => {
         data: [{ text: lang.breadcrumbTitle }],
         image: "/images/layout/breadcrumb/1.jpg",
       }}
+      pageTitle="Takımımız | Auto De Part"
     >
       <Styled.OurTeam>
         <Styled.Information>

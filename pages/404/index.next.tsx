@@ -6,7 +6,7 @@ const DynamicMainLayout = dynamic(() => import("@/layout/main"));
 
 const NotFound: NextPage = () => {
   return (
-    <DynamicMainLayout>
+    <DynamicMainLayout pageTitle="Sayfa Bulunamadı | Auto De Part">
       <div></div>
     </DynamicMainLayout>
   );
