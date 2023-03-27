@@ -59,6 +59,7 @@ const Contact: NextPage = () => {
         data: [{ text: lang.breadcrumbTitle }],
         image: "/images/products/egzoz.jpeg",
       }}
+      pageTitle="İletişim | Auto De Part"
     >
       <Styled.Wrapper>
         <div>

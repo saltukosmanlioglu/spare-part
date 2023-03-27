@@ -19,6 +19,7 @@ const OurProducts: NextPage = () => {
         data: [{ text: lang.breadcrumbTitle }],
         image: "/images/products/filtreler.jpeg",
       }}
+      pageTitle="Ürünlerimiz | Auto De Part"
     >
       <Styled.OurProducts>
         {/* <Styled.PageDetail>

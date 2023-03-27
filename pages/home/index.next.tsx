@@ -11,7 +11,7 @@ const DynamicOurPartners = dynamic(() => import("./widgets/our-partners"));
 const DynamicOurServices = dynamic(() => import("./widgets/our-services"));
 
 const Home: NextPage = () => (
-  <DynamicMainLayout>
+  <DynamicMainLayout pageTitle="Auto De Part">
     <DynamicMainSlick />
     <DynamicAboutUs />
     <DynamicOurServices />

@@ -22,6 +22,7 @@ const Us: NextPage = () => {
         data: [{ text: lang.breadcrumbTitle }],
         image: "/images/products/suspansiyon.jpeg",
       }}
+      pageTitle="Hakkımızda | Auto De Part"
     >
       <Styled.Us>
         <Information />

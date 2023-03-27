@@ -25,6 +25,7 @@ const OurSolutionPartners: NextPage = () => {
         data: [{ text: lang.breadcrumbTitle }],
         image: "/images/products/sanziman.jpeg",
       }}
+      pageTitle="Çözüm Ortaklarımız | Auto De Part"
     >
       <Styled.OurSolutionPartners>
         <FilterBar<PartnerProps>
