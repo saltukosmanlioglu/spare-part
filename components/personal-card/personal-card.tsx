@@ -20,13 +20,7 @@ const PersonalCard: React.FunctionComponent<PersonalCardProps> = ({
           <div>
             <div>
               <Link href={socialMedia.linkedin} target="_blank">
-                <ImFacebook color="#b19777" size={16} />
-              </Link>
-              <Link href={socialMedia.linkedin} target="_blank">
                 <ImLinkedin2 color="#b19777" size={16} />
-              </Link>
-              <Link href={socialMedia.linkedin} target="_blank">
-                <ImTwitter color="#b19777" size={16} />
               </Link>
             </div>
           </div>

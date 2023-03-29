@@ -9,6 +9,7 @@ import { useLanguage } from "@/utils/hooks";
 
 import { howWeDoEn, howWeDoTr } from "./lang";
 import * as Styled from "./how-we-do.styled";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const HowWeDo: React.FunctionComponent = () => {
   const { lang } = useLanguage(howWeDoTr, howWeDoEn);
@@ -26,31 +27,31 @@ const HowWeDo: React.FunctionComponent = () => {
           <div>
             <FaRegHandshake color="#fff" size={70} />
           </div>
-          <b>Satış</b>
+          <b>{lang.sales}</b>
         </Styled.Circle>
         <Styled.Circle>
           <div>
             <GoPackage color="#fff" size={70} />
           </div>
-          <b>Tedarik</b>
+          <b>{lang.procurement}</b>
         </Styled.Circle>
         <Styled.Circle>
           <div>
             <FaWarehouse color="#fff" size={70} />
           </div>
-          <b>Depolama</b>
+          <b>{lang.storage}</b>
         </Styled.Circle>
         <Styled.Circle>
           <div>
             <ImTruck color="#fff" size={70} />
           </div>
-          <b>Lojistik</b>
+          <b>{lang.logistics}</b>
         </Styled.Circle>
         <Styled.Circle>
           <div>
             <HiDocumentCheck color="#fff" size={70} />
           </div>
-          <b>Gümrük</b>
+          <b>{lang.custom}</b>
         </Styled.Circle>
       </Styled.Wrapper>
     </Section>

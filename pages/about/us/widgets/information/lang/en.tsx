@@ -6,16 +6,16 @@ export const information = {
       </b> */}
       <b>Auto De Part</b>
       <p>
-        AutoDePart ailesi, Türkiye pazarında otomotiv yedek parça üreticilerinin
-        ve tedarikçilerinin ihracatına odaklanmıştır.
+        As autodepart family, we have focused on the exportation of automotive
+        spare products and suppliers in the Turkish market.
         <br /> <br />
-        Bu bağlamda güvenilir, kaliteli ve hızlı bir hizme sunmak için 2014
-        yılından günümüze kadar çalışmalarına devam etmiştir.
+        Since 2014, we have been continuing our efforts to provide a quality and
+        fast service.
         <br />
         <br />
-        Satın alma, satış, depolama, gümrükleme ve nakliye hizmetleri sunduğumuz
-        bu geniş ağ da müşterilerimize eksiksiz ürün yelpazemizle çözümler
-        üretiyoruz.
+        In this wide network where we offer purchasing, sales, storage, customs
+        clearance and transportation services, we create solutions for our
+        customers with our wide product range.
       </p>
     </div>
   ),
