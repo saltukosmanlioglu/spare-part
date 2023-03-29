@@ -1,5 +1,6 @@
 export const howWeDo = {
-  title: "How we do?",
+  description: "What we are doing?",
+  title: "How we are doing?",
   custom: "Custom",
   logistics: "Logistics",
   procurement: "Procurement",

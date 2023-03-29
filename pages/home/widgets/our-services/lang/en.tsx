@@ -1,4 +1,5 @@
 export const ourServices = {
+  description: "Our Services",
   title: "Our Services",
   procurement: "Procurement",
   procurementDesc:

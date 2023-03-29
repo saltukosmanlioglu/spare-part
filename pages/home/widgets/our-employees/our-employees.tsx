@@ -92,7 +92,7 @@ const OurEmployees: React.FunctionComponent = () => {
             }}
           />
           <PersonalCard
-            image="/images/user.jpeg"
+            image="/images/about/team/baran-babatas.JPG"
             name="Baran Babataş"
             profession="Satış Sorumlusu"
             socialMedia={{
@@ -101,7 +101,7 @@ const OurEmployees: React.FunctionComponent = () => {
           />
           <PersonalCard
             image="/images/user.jpeg"
-            name="Yade Yayla"
+            name="Hadis Hashemianpour"
             profession="Satış Sorumlusu"
             socialMedia={{
               linkedin: "",

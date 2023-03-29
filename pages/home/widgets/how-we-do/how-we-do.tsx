@@ -9,7 +9,6 @@ import { useLanguage } from "@/utils/hooks";
 
 import { howWeDoEn, howWeDoTr } from "./lang";
 import * as Styled from "./how-we-do.styled";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 const HowWeDo: React.FunctionComponent = () => {
   const { lang } = useLanguage(howWeDoTr, howWeDoEn);
@@ -17,7 +16,7 @@ const HowWeDo: React.FunctionComponent = () => {
   return (
     <Section
       background="#fff url('/images/home/dots.png')"
-      description={lang.title}
+      description={lang.description}
       mPadding="20px"
       padding="80px 120px"
       title={lang.title}
